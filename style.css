@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+
+
+h1 {
+    background-color: #081b31;
+    color: #fff;
+    height: 5rem;
+    text-align: center;
+    line-height: 5rem;
+    border-radius: 2rem;
+    color: white;
+    text-shadow: 2px 2px 4px #851d73;
+    overflow: hidden; /* Ensures text stays within the background bounds */
+    position: relative;
+}
+
+h1 span {
+    position: absolute;
+    animation: moveText 15s infinite alternate linear; /* Alternates direction after each cycle */
+    white-space: nowrap; /* Prevents the text from wrapping */
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateX(-100%); /* Starts outside the left edge */
+    }
+    100% {
+        transform: translateX(100%); /* Moves out from the right edge */
+    }
+}
+
+body  {
+    background-image: url("Gemini_Generated_Image_1g2xu71g2xu71g2x.jpg");
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the background image */
+  }
+
+  .choice {
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for choice elements */
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color: #081b31;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for images */
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 5rem;
+    margin-top: 3rem;
+    color: rgb(245, 245, 245);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1); /* Adjust values as needed */
+}
+
+
+#user-score, #comp-score {
+    font-size: 4rem;
+}
+
+.msg-container {
+    margin-top: 5rem;
+    
+}
+
+#msg {
+    background-color: #081b31;
+    color: #fff;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+    
+}
